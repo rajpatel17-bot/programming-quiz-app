@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logos/logo.png" type="icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <title>Programming Quiz App</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo_name">
+            <img src="./assets/logos/logo.png" alt="">
+            <h1> Programming Quiz App </h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="img">
+            <img src="./assets/logos/logo.png" alt="">
+        </div>
+        <div class="contents">
+            <h1 id="content_title">This is <span>Programming Quiz App</span> made in <span>Vanilla JS</span></h1>
+            <p id="content_para">Here you can test your knowledge of <span>Html5, Css3</span> and <span>JavaScript</span></p>
+            <button id="content_start_btn">Start Quiz</button>
+        </div>
+
+        <div id="select_language">
+            <div class="header">
+                <button id="close_menu_btn">X</button>
+                <h1>Select Language</h1>
+            </div>
+            <div class="body">
+                <a href="./pages/quiz.html?language=html"> HTML </a>
+                <a href="./pages/quiz.html?language=css"> CSS </a>
+                <a href="./pages/quiz.html?language=javascript"> JavaScript </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const start = document.querySelector("#content_start_btn");
+        const close = document.querySelector("#close_menu_btn");
+        const menu = document.querySelector("#select_language");
+        localStorage.clear("score");
+        
+        start.addEventListener("click", () => {
+            menu.classList.add("active-select-menu");
+        })
+
+        close.addEventListener("click", () => {
+            menu.classList.remove("active-select-menu");
+        })
+    </script>
+
+</body>
+</html>

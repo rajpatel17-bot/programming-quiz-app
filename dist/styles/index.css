@@ -1,0 +1,125 @@
+/* @keyframes image-animation{
+    0% {top: -15px;}
+    25% {right: 15px;}
+    50% {bottom: 15px;}
+    100% {left: 1px;}
+} */
+
+main > .img > img{
+    position: relative;
+    animation-name: image-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: clamp(30rem, 30vw, 51rem);
+    filter: drop-shadow(0 0px 0.5rem #fff);
+}
+
+.contents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contents > h1{
+    font-size: var(--heading);
+}
+
+.contents > p{
+    margin-top: 1rem;
+    font-size: var(--para);
+}
+
+.contents > button{
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 0.6rem #fff;
+    font-size: var(--btn-font-size);
+    background-color: var(--btn-bg);
+    cursor: pointer;
+}
+
+.contents > h1 > span,
+.contents > p > span{
+    color: var(--text-style-color);
+}
+
+/* language selection css */
+#select_language{
+    position: fixed;
+    width: 100%;
+    max-width: 50rem;
+    height: 40rem;
+    background: var(--menu-bg);
+    left: 60%;
+    transform: translate(-50%, 0%);
+    top: 100%;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    color: #000;
+    box-shadow: 0rem 1rem 1rem rgb(0 0 0 / 50%);
+}
+
+.header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header h1{
+    color: #000;
+    font-size: var(--para);
+}
+
+#close_menu_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 2rem;
+    background: #f13636;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: unset;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.body a{
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background: var(--body-bg);
+    border-radius: 0.3rem;
+    font-size: clamp(1.8rem, 2rem, 2vw);
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.25s ease;
+    box-shadow: 0 0.3rem 0.3rem rgb(0 0 0 / 20%), inset 0 0.3rem 0.3rem rgb(126 113 2 / 10%);
+}
+
+.body a:hover{
+    background-color: var(--btn-bg);
+}
+
+.header, .body{
+    padding: 1rem 2rem;
+}
+
+.active-select-menu{
+    top: 50%!important;
+}
+
+/* media queries */
+@media(max-width: 1070px){
+    main{
+        flex-direction: column;
+    }
+    #select_language{
+        left: 50%;
+        width: 90%;
+    }
+}

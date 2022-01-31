@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+    <link rel="shortcut icon" href="../assets/logos/logo.png" type="image/x-icon">
+    <script src="../script/quiz.js" type="module"></script>
+    <title>Quiz Page - Programming Quiz App</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo_name">
+            <img src="../assets/logos/logo.png" alt="">
+            <h1> Programming Quiz App </h1>
+        </div>
+        <div class="level_name">
+            <p id="lang_name"></p>
+        </div>
+        <div class="home_btn">
+            <a href="../index.html"> < Go to home</a>
+        </div>
+    </header>
+    <div id="info">
+        <p id="timer"></p>
+        <p id="que_score">Score : 0</p>
+    </div>
+    <main>
+        <div class="que_img">
+            <img id="que_img" src="" alt="image">
+            <div class="circle_loader"></div>
+        </div>
+        <div class="que_parent_box">
+            <div id="que_no"></div>
+            <div class="que_box">
+                <p id="que"></p>
+            </div>
+            <div id="options" class="option_box"></div>
+            <div id="opt_loader" class="circle_loader"></div>
+        </div>
+    </main>
+
+    <script>
+        localStorage.clear("score");
+    </script>
+
+</body>
+</html>

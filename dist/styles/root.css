@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Titillium+Web:wght@300&display=swap');
+
+:root {
+    --menu-bg: #fff;
+    --btn-bg: #3F3D88;
+    --body-bg: #745FBE;
+    --text-color: #fff;
+    --que_no_bg: #77BEFF;
+    --option_bg: #77BEFF;
+    --nav-container-bg: #3F3D88; 
+    --que-container-bg: #3F3D88;
+    --text-style-color: #FFF500;
+    --btn-font-size: clamp(2rem, 2.5rem, 3vw);
+    --heading: clamp(2rem, 3.5rem, 4vw);
+    --para: clamp(1.5rem, 2.2rem, 3vw);
+    --header_logoName_font_size:  clamp(1.8rem, 1.5vw, 2.5rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+    letter-spacing: 0.07rem;
+    color: var(--text-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body{
+    margin: auto;
+    height: 100%;
+    max-width: 200rem;
+    background-color: var(--body-bg);
+}
+
+header{
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px #fff;
+    background-color: var(--nav-container-bg);
+}
+
+header > .logo_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .logo_name > img{
+    width: clamp(6rem, 6vw, 8rem);
+    filter: drop-shadow(0 1px 0.2rem #fff);
+}
+
+header > .logo_name > h1{
+    font-size: var(--header_logoName_font_size); 
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.level_name, 
+.home_btn,
+.devBtn {
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--body-bg);
+    font-size: var(--header_logoName_font_size);
+}
+
+#lang_name{
+    text-transform: capitalize;
+}

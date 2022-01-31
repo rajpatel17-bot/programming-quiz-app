@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="shortcut icon" href="../assets/logos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/resultPage.css">
+    <script src="../script/resultPage.js" defer></script>
+    <title>Result Page - Programming Quiz App</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo_name">
+            <img src="../assets/logos/logo.png" alt="">
+            <h1> Programming Quiz App </h1>
+        </div>
+        <div class="level_name">
+            <p id="lang_name"></p>
+        </div>
+        <div class="home_btn">
+            <a href="../index.html" onclick="clearStorage()"> < Go to home</a>
+        </div>
+    </header>
+
+    <div id="que_score">Score : 0</div>
+    
+    <main>
+        <div class="report">
+            <h2>Your Report</h2>
+            <div class="result">
+                <h1 id="greeting_msg"></h1>
+                <div id="que_result">
+                    <div class="result_box">
+                        <h2 id="correct"></h2>
+                        <h3>Correct</h3>
+                    </div>
+                    <div class="result_box">
+                        <h2 id="incorrect"></h2>
+                        <h3>Incorrect</h3>
+                    </div>
+                    <div class="result_box">
+                        <h2 id="total_que">10</h2>
+                        <h3>Total Questions</h3>
+                    </div>
+                </div>
+                <p>Learning should never be stop! So you can go to improve your Web Development skills</p>
+            </div>
+            <div class="web_dev_btn">
+                <a class="devBtn" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> HTML </a>
+                <a class="devBtn" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> Css </a>
+                <a class="devBtn" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> JavaScript </a>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        function clearStorage(){
+            localStorage.clear("score")
+        }
+    </script>
+
+</body>
+</html>

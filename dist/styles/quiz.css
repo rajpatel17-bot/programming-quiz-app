@@ -1,0 +1,135 @@
+main{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#info{
+    display: flex;
+    margin: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    font-size: var(--para);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queImg{
+    width: clamp(35rem, 40vw, 61rem);
+}
+.img{
+    width: clamp(35rem, 40vw, 61rem);
+    filter: drop-shadow(0 0px 0.5rem #fff);
+}
+
+.que_parent_box{
+    position: relative;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    font-size: var(--para);
+    margin: 4rem; 
+    box-shadow: 2px 1px 15px #000;
+    background-color: var(--que-container-bg);
+    text-align: start;
+    max-width: 65rem;
+}
+
+#que{
+    line-height: 1.7;
+    font-size: clamp(1.8rem, 2rem, 2vw);
+}
+
+#que_no{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--que_no_bg);
+    color: #000;
+    padding: 0.5rem;
+    font-weight: 900;
+    border-radius: 0.3rem;
+    font-size: clamp(2rem, 2.5rem, 2.7vw);
+    box-shadow: 0 0 7px #000;
+}
+
+.option_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.option_box > li{
+    color: #000;
+    list-style: none;
+    border-radius: 0.3rem;
+    padding: 0.8rem 1rem;
+    box-shadow: 2px 0px 8px #000;
+    background-color: var(--body-bg);
+    color: #fff;
+    font-size: clamp(1.5rem, 1.6rem, 1.6vw);
+    transition: all 0.2s linear;
+}
+
+.option_box > li:hover{
+    cursor: pointer;
+    background-color: var(--option_bg);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* media queries */
+@media(max-width: 1155px){
+    .queImg{
+        width: 630px;
+        height: auto;
+    }  
+}
+
+@media(max-width: 690px){
+    .queImg{
+        width: 90%; 
+    }
+    header{
+        padding-bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .level_name,
+    .home_btn{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .option_box > li{
+        width: 100%;
+    }
+}
+
+.circle_loader{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-top-color: red;
+    border-bottom-color: #000;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.8;
+}
