@@ -1,6 +1,7 @@
 main{
-    justify-content: space-around;
     flex-wrap: wrap;
+    height: 75vh;
+    justify-content: space-around;
 }
 
 #info{
@@ -85,7 +86,11 @@ main{
     .queImg{
         width: 630px;
         height: auto;
+        margin-top: 3rem;
     }  
+    main{
+        height: fit-content;
+    }
 }
 
 @media(max-width: 690px){

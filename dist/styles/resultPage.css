@@ -78,6 +78,7 @@ main{
 
 .web_dev_btn{
     display: flex;
+    margin-bottom: 5rem;
     align-items: center;
     justify-content: center;
 }

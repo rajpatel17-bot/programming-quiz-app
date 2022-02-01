@@ -67,7 +67,7 @@ header > .logo_name > h1{
 }
 
 main{
-    height: 90vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
