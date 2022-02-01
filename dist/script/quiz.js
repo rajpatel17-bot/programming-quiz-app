@@ -19,19 +19,19 @@ function renderPage(que) {
   que.then(({ default: que_arr }) => {
     renderQue(que_arr, que_index, score);
     // this is for the timer
-    // interval = setInterval(function () {
-    //   timer.innerHTML = "Time : " + count + " sec";
-    //   count--;
-    //   timer_audio.play();
-    //   if (count < 0) {
-    //     timeup();
-    //     timer_audio.pause();
-    //     alert("Time up!!, Game Over!!");
-    //     que_parent_box.innerHTML = que_arr[10].resultPageBtn;
-    //     logoImg();
-    //     clearInterval(interval);
-    //   }
-    // }, 1000);
+    interval = setInterval(function () {
+      timer.innerHTML = "Time : " + count + " sec";
+      count--;
+      timer_audio.play();
+      if (count < 0) {
+        timeup();
+        timer_audio.pause();
+        alert("Time up!!, Game Over!!");
+        que_parent_box.innerHTML = que_arr[10].resultPageBtn;
+        logoImg();
+        clearInterval(interval);
+      }
+    }, 1000);
   });
   lang_name.innerHTML = language;
 }
