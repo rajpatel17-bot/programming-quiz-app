@@ -5,7 +5,7 @@ See running application here : https://rajpatel17-bot.github.io/programming-quiz
 
 # Introduction of the project 
 - This is a programming quiz app. Here you can test your knowledge in HTML5, CSS3 and JavaScript.
-- In all of the sections 10 questions will be asked to you and you must answer in 90 seconds. Every question contains 1 point.
+- In all of the sections 10 questions will be asked and you must answer in 90 seconds. Every question contains 1 point.
 - The technologies used in this project are: HTML5, CSS3 and JavaScript.
 
 # Feature 
