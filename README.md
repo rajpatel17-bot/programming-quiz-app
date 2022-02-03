@@ -4,20 +4,20 @@
 
 
 # Introduction of the project 
-- This is programming quiz app. Here you can test your knowledge in HTML5, CSS3 and JavaScript.
-- In all the sections 10 questions will ask from you and you must to give the answer in 90 second. Every question contain 1 point.
-- Tech used in this projects are HTML5, CSS3 and JavaScript.
+- This is a programming quiz app. Here you can test your knowledge in HTML5, CSS3 and JavaScript.
+- In all of the sections 10 questions will be asked to you and you must answer in 90 seconds. Every question contains 1 point.
+- The technologies used in this project are: HTML5, CSS3 and JavaScript.
 
 # Feature 
 - Clear User Interface
-- Saparate section of each languages
-- 90 second time for the answer
-- At right answer you will get 1 point otherwise 0 point
-- The score and remaining time will show at the top
+- Separate section for each one of the languages
+- 90 second time limit for the answer
+- If you get the right answer you will receive 1 point, otherwise you get 0 points
+- The score and remaining time will be shown at the top
 - AI is also available here -
-  1. It continusoly count every second.
-  2. It will tell you how many second you took to complete the quiz and if the time is over then it will also tell you that Time Up!! and alert will show
-- At result page you can see your report that contain the information of your correct answers, incorrect answers and total number of questions
+  1. It continuously count every second
+  2. It will tell you how many seconds you took to complete the quiz and if the time is over then it will warn you that the time is up and an alert will appear
+- At result page you can see your report that contains the information of your correct answers, incorrect answers and total number of questions
 - Mobile Responsive
 
 # Screen Shots
