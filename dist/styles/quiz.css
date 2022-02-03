@@ -82,6 +82,9 @@ main{
 
 /* media queries */
 @media(max-width: 1155px){
+    .option_box > li{
+        color: #fff;
+    }
     .queImg{
         width: 630px;
         height: auto;
