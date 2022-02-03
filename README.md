@@ -1,6 +1,6 @@
 # programming-quiz-app
 
-# See running application here : https://rajpatel17-bot.github.io/programming-quiz-app/dist/
+See running application here : https://rajpatel17-bot.github.io/programming-quiz-app/dist/
 
 
 # Introduction of the project 
@@ -37,4 +37,4 @@
 ![Screenshot (208)](https://user-images.githubusercontent.com/83405614/151960206-b8656dfa-533c-4ce9-b0c0-0a02a9635420.png)
 
 # Credit : Raj Patel
-# Github Profile : https://github.com/rajpatel17-bot
+Github Profile : https://github.com/rajpatel17-bot
