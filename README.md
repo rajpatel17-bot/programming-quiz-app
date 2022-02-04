@@ -13,6 +13,7 @@ See running application here : https://rajpatel17-bot.github.io/programming-quiz
 - Saparate section of each languages
 - 90 second time for the answer
 - At right answer you will get 1 point otherwise 0 point
+- For showing the score i use #localStorage
 - The score and remaining time will show at the top
 - AI is also available here -
   1. It continusoly count every second.
