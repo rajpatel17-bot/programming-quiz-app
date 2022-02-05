@@ -13,8 +13,9 @@ See running application here : https://rajpatel17-bot.github.io/programming-quiz
 - Separate section for each one of the languages
 - 90 second time limit for the answer
 - If you get the right answer you will receive 1 point, otherwise you get 0 points
+- To show the score i use #localStorage
 - The score and remaining time will be shown at the top
-- AI is also available here -
+- AI is also available here:
   1. It continuously count every second
   2. It will tell you how many seconds you took to complete the quiz and if the time is over then it will warn you that the time is up and an alert will appear
 - At result page you can see your report that contains the information of your correct answers, incorrect answers and total number of questions
