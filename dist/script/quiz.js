@@ -10,7 +10,7 @@ let que_parent_box = document.querySelector(".que_parent_box");
 const circle_loader = document.querySelector(".circle_loader");
 let language = location.search.slice(location.search.indexOf("=") + 1); // language name from URL
 
-let timer_audio = new Audio("../assets/timer_sound/timer.m4a");
+// let timer_audio = new Audio("../assets/timer_sound/timer.m4a");
 
 // render page and import questions according to the selected language
 renderPage(import(`../assets/api/${language}_questions.js`));
@@ -22,10 +22,10 @@ function renderPage(que) {
     interval = setInterval(function () {
       timer.innerHTML = "Time : " + count + " sec";
       count--;
-      timer_audio.play();
+//       timer_audio.play();
       if (count < 0) {
         timeup();
-        timer_audio.pause();
+//         timer_audio.pause();
         alert("Time up!!, Game Over!!");
         que_parent_box.innerHTML = que_arr[10].resultPageBtn;
         logoImg();
@@ -94,7 +94,7 @@ question_update = function (que_arr, que_index) {
         logoImg();
         clearInterval(interval);
         timer.innerHTML = "Time : 0 sec";
-        timer_audio.pause();
+//         timer_audio.pause();
         speak(count);
       }
       renderQue(que_arr, que_index, score);
